@@ -1,15 +1,19 @@
 .wrapper {
-  background: url('./assets/background-image.jpg') no-repeat center center;
+  background: rgb(123, 75, 157);
+  background: linear-gradient(90deg, rgba(123, 75, 157, 1) 23%, rgba(0, 107, 129, 1) 100%);
+
+  background: url('./assets/background-image.jpg') no-repeat center -200px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+ 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .wrapper {
-    background: rgb(123, 75, 157);
-    background: linear-gradient(90deg, rgba(123, 75, 157, 1) 23%, rgba(0, 107, 129, 1) 100%);
+   background: url('./assets/background-image.jpg') no-repeat center -220px;
+
   }
 
 }
