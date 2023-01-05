@@ -1,0 +1,117 @@
+.welcome__wrapper {
+  background: url('../../assets/background-home.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  height: 1000px;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: var(--light-violet);
+
+  .welcome__block {
+    margin-left: 100px;
+    display: inherit;
+    justify-content: left;
+    align-items: center;
+    font-size: 24px;
+    padding: 20px 50px;
+    width: 600px;
+    height: 400px;
+    backdrop-filter: blur(50px) grayscale(60%);
+    background-color: rgb(0, 0, 0, 0.2);
+    color: rgb(219, 219, 219);
+    transition: 0.5s ease-in;
+    animation: welcome-block 1.5s ease-in;
+    transform: perspective(1500px) rotateY(15deg);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.2), 0px -4px 10px rgba(255, 255, 255, 0.2);
+    &:hover {
+      backdrop-filter: blur(70px) grayscale(90%);
+      transform: perspective(3000px) rotateY(5deg) translateX(7px);
+    }
+
+    span {
+      text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.1), 0px -4px 10px rgba(3, 3, 3, 0.2);
+      position: relative;
+      &::after {
+        position: absolute;
+        top: 0;
+        display: block;
+        content: '';
+        width: 3px;
+        right: -4px;
+        height: 28px;
+        opacity: 0.6;
+        animation: blink 1s infinite;
+      }
+    }
+  }
+}
+
+.arrow {
+  a {
+    text-decoration: none;
+  }
+  position: absolute;
+  font-size: 50px;
+  top: 850px;
+  background-color:rgb(0, 0, 0, 0.2);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  text-decoration: none;
+  color: white;
+  right: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  opacity: 0;
+  transition: 1s ease;
+  animation: arrow 5s ease 3s infinite;
+}
+
+.middle__wrapper {
+  height: 5000px;
+  background-color: var(--darky-violet);
+  margin: 0 auto;
+  max-width: 1080px;
+  min-width: 500px;
+}
+
+// MEDIAS
+
+// ANIMATIONS
+
+@keyframes blink {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+@keyframes welcome-block {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0;
+  }
+}
