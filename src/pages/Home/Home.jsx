@@ -6,14 +6,14 @@ import { HashLink as Link } from 'react-router-hash-link'
 
 export const Home = ({ arrowIsActive }) => {
   const typewritter = useRef(null)
-  const [textForTypewritter, setTextForTypewritter] = useState('Здравствуйте! Я разработчик на React.')
+  const [textForTypewritter, setTextForTypewritter] = useState('Четыре часа с пяти утра это делал леее.')
   useEffect(() => {
     setTimeout(() => {
       for (let i = 0; i < textForTypewritter.length; i++) {
         setTimeout(() => {
           console.log(textForTypewritter.split('').slice(0, i + 1).join(''))
           typewritter.current.innerText = textForTypewritter.split('').slice(0, i + 1).join('')
-        }, 200 * i)
+        }, 100 * i)
       }
     }, 2300)
   }, [textForTypewritter])
@@ -36,9 +36,40 @@ export const Home = ({ arrowIsActive }) => {
         </Link>
         : ''}
 
-
       <div className={styles.middle__wrapper} id='middleAnchor'>
-        middle content
+        <div className={styles.middle__block_wrapper}>
+          <div className={styles.middle__block}>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            Consectetur adipisicing elit. Error ducimus repellat nisi aspernatur, quia molestias voluptatibus quod impedit reiciendis omnis, vel nostrum perspiciatis. Doloribus quasi fugit reiciendis exercitationem autem sapiente!
+          </div>
+          <div className={styles.middle__block}>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            Consectetur adipisicing elit. Error ducimus repellat nisi aspernatur, quia molestias voluptatibus quod impedit reiciendis omnis, vel nostrum perspiciatis. Doloribus quasi fugit reiciendis exercitationem autem sapiente!
+          </div>
+        </div>
+        <div className={styles.middle__block_wrapper}>
+          <div className={styles.middle__block}>
+            Consectetur adipisicing elit. Error ducimus repellat nisi aspernatur, quia molestias voluptatibus quod impedit reiciendis omnis, vel nostrum perspiciatis. Doloribus quasi fugit reiciendis exercitationem autem sapiente!
+          </div>
+          <div className={styles.middle__block}>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            Consectetur adipisicing elit. Error ducimus repellat nisi aspernatur, quia molestias voluptatibus quod impedit reiciendis omnis, vel nostrum perspiciatis. Doloribus quasi fugit reiciendis exercitationem autem sapiente!
+          </div>
+        </div>
+        <div className={styles.middle__block_wrapper}>
+          <div className={styles.middle__block}>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            Consectetur adipisicing elit. Error ducimus repellat nisi aspernatur, quia molestias voluptatibus quod impedit reiciendis omnis, vel nostrum perspiciatis. Doloribus quasi fugit reiciendis exercitationem autem sapiente!
+          </div>
+          <div className={styles.middle__block}>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            Consectetur adipisicing elit. Error ducimus repellat nisi aspernatur, quia molestias voluptatibus quod impedit reiciendis omnis, vel nostrum perspiciatis. Doloribus quasi fugit reiciendis exercitationem autem sapiente!
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.bottom__wrapper}>
+        1
       </div>
     </>
   )

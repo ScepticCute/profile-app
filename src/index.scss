@@ -1,26 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --darkest-violet: #0C0032;
-  --darky-violet: #190061;
-  --violet: #240090;
-  --light-violet: #3500D3;
-  --grey: #282828;
+  --brown: #5D5C61 ;
+  --light-blue: #3b8beb;
+  --dark-blue: #557A95;
+  --sand: #B1A296;
+  --black: #19181a
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:  Roboto,  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:  Comfortaa,  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  font-weight: 100;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: Poppins, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
