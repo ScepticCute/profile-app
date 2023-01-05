@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  min-width: 350px;
   .welcome__block {
     display: inherit;
     position: relative;
@@ -64,25 +64,22 @@
 .middle__wrapper {
   display: flex;
   flex-direction: column;
-  height: 965px;
+  min-height: 500px;
   background-color: transparent;
   margin: 0 auto;
   max-width: 1080px;
-  min-width: 500px;
   
   .middle__block_wrapper {
     display: flex;
     justify-content: space-between;
     row-gap: 10px;
-    border: 1px solid red;
     .middle__block {
+      padding: 20px;
       display: flex;
       flex-direction: column;
     justify-content: center;
-
       border-radius: 1rem;
       align-items: center;
-      max-width: 30vw;
       min-width: 200px;
       height: 300px;
       margin: 10px;
@@ -103,9 +100,26 @@
 .bottom__wrapper {
   height: 1000px;
   background-color: var(--black);
+  
 }
 
 // MEDIAS
+
+@media (max-width: 500px) {
+  .middle__block_wrapper {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    row-gap: 0;
+    border: none;
+    .middle__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: none;
+    }
+  }
+}
 
 // ANIMATIONS
 

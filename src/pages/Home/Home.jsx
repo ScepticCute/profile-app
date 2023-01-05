@@ -6,7 +6,7 @@ import { HashLink as Link } from 'react-router-hash-link'
 
 export const Home = ({ arrowIsActive }) => {
   const typewritter = useRef(null)
-  const [textForTypewritter, setTextForTypewritter] = useState('Четыре часа с пяти утра это делал леее.')
+  const [textForTypewritter, setTextForTypewritter] = useState('Я FrontEnd разработчик.')
   useEffect(() => {
     setTimeout(() => {
       for (let i = 0; i < textForTypewritter.length; i++) {
@@ -49,6 +49,7 @@ export const Home = ({ arrowIsActive }) => {
         </div>
         <div className={styles.middle__block_wrapper}>
           <div className={styles.middle__block}>
+            <h1>Lorem ipsum dolor sit amet</h1>
             Consectetur adipisicing elit. Error ducimus repellat nisi aspernatur, quia molestias voluptatibus quod impedit reiciendis omnis, vel nostrum perspiciatis. Doloribus quasi fugit reiciendis exercitationem autem sapiente!
           </div>
           <div className={styles.middle__block}>
@@ -68,7 +69,7 @@ export const Home = ({ arrowIsActive }) => {
         </div>
       </div>
 
-      <div className={styles.bottom__wrapper}>
+      <div className={styles.bottom__wrapper} id='bottomAnchor'>
         1
       </div>
     </>

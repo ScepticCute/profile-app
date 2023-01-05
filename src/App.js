@@ -8,8 +8,9 @@ import { Home } from './pages/Home/Home';
 
 function App() {
   const [headerIsActive, setHeaderActive] = useState(false);
+  const [burgerIsOpen, setBurgerOpen] = useState(false);
   useEffect(() => {
-    const handleScroll = (event) => {
+    const handleScroll = () => {
       if (window.scrollY > 100) {
         setHeaderActive(true);
       }
@@ -20,16 +21,14 @@ function App() {
     };
   }, []);
   return (
-    <>
-      <div className={styles.wrapper}>
-        {headerIsActive ? <Header /> : ''}
-        <Routes>
-          <Route path="/" element={<Home arrowIsActive={headerIsActive} />} />
-        </Routes>
+    <div className={styles.wrapper}>
+      {headerIsActive ? <Header setBurgerOpen={setBurgerOpen} burgerIsOpen={burgerIsOpen} /> : ''}
+      <Routes>
+        <Route path="/" element={<Home arrowIsActive={headerIsActive} />} />
+      </Routes>
 
-        <Footer />
-      </div>
-    </>
+      <Footer />
+    </div>
   );
 }
 

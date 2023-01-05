@@ -1,7 +1,33 @@
 .wrapper {
-  background: url('./assets/background-image.jpg') no-repeat top;
+  background: url('./assets/background-image.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    background: rgb(123, 75, 157);
+    background: linear-gradient(90deg, rgba(123, 75, 157, 1) 23%, rgba(0, 107, 129, 1) 100%);
+  }
+
+}
+
+// OPEN BURGER 
+
+.burger {
+    position: fixed;
+    display: none;
+}
+
+@media (max-width: 600px) {
+  .burger {
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+  }
 }

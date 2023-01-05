@@ -1,7 +1,5 @@
 .header {
   backdrop-filter: blur(60px);
-  border-radius: 0 0  1rem  1rem;
-  overflow: hidden;
   margin: 0 auto;
   position: fixed;
   max-width: 1080px;
@@ -9,9 +7,8 @@
   left: 0;
   right: 0;
   z-index: 10000;
-  animation: header-start .5s ease;
-  ul {
-    
+  animation: header-start 0.5s ease;
+  nav ul {
     height: 70px;
     margin: 0;
     display: flex;
@@ -25,7 +22,6 @@
       padding: 24px 10px;
       position: relative;
       font-size: large;
-      border-radius: 1px;
       font-weight: 500;
       margin: 0;
       list-style: none;
@@ -41,7 +37,7 @@
 
       &:hover {
         background-color: white;
-        color: var( --light-blue);
+        color: black;
 
         &::after {
           opacity: 1;
@@ -51,14 +47,41 @@
           left: 0;
           position: absolute;
           content: ' ';
-          background-color: var( --brown);
+          background-color: var(--brown);
         }
       }
     }
   }
+
+  // BURGER
+
+  .burger {
+    display: none;
+    font-size: 65px;
+    width: 65px;
+    height: 65px;
+    color: white;
+    cursor: pointer;
+  }
+
+
 }
 
-// ANIMATION 
+// MEDIAS 
+
+@media (max-width: 600px) {
+  .header {
+    height: 65px;
+    nav ul {
+      display: none;
+    }
+    .burger {
+      display: inline-block;
+    }
+  }
+}
+
+// ANIMATION
 
 @keyframes header-start {
   0% {
@@ -68,6 +91,6 @@
     top: -100px;
   }
   100% {
-    top: 0
+    top: 0;
   }
 }
