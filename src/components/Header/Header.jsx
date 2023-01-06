@@ -5,7 +5,8 @@ import { HiBars3 } from 'react-icons/hi2'
 
 const linksArray = [
   { link: '/#welcomeAnchor', title: 'Главная страница' },
-  { link: '/#middleAnchor', title: 'Примеры работ' },
+  { link: '/#middleAnchor', title: 'Обо мне' },
+  { link: '/#sitesAnchor', title: 'Примеры работ' },
   { link: '/#bottomAnchor', title: 'Мои преимущества' },
 ]
 
