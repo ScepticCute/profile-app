@@ -1,0 +1,67 @@
+.wrapper {
+  min-height: 1000px;
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  animation: gradient 30s ease infinite;
+  background-size: 400% 400%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .wrap {
+    background: linear-gradient(45deg, rgb(62, 78, 219) 23%, rgb(78, 250, 221) 100%);
+    box-shadow: 0px 0px 20px -3px rgb(59, 255, 75);
+
+    max-width: 1000px;
+
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    .content {
+      border-radius: inherit;
+      padding: 60px;
+      background-color: var(--black);
+      color: white;
+      min-width: 600px;
+      min-height: 700px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left_side {
+
+    }
+    .skill_grid {
+
+    }
+    .progress_bar {
+      display: flex;
+      justify-content: center;
+      width: 300px;
+      background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+      animation: gradient 10s ease infinite;
+      background-size: 400% 400%;
+      border-radius: 20px;
+      padding: 5px;
+      
+    }
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
