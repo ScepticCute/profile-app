@@ -15,12 +15,7 @@
     background: url('./assets/background-image.jpg') no-repeat center -250px;
   }
 }
-@media (max-height: 720px ) {
-  .wrapper {
-   background: url('./assets/background-image.jpg') no-repeat center -250px;
-  }
-}
-@media (max-height: 360px) {
+@media (max-height: 700px) {
   .wrapper {
    background: url('./assets/background-image.jpg') no-repeat center -600px;
   }

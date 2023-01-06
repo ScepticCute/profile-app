@@ -1,3 +1,28 @@
 .footer {
-  background-color: white;
+  height: 150px;
+  background-color: var(--black);
+  color: #b3bcbd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .wrap {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  .contact_text {
+    margin: 15px;
+  }
+  .icons {
+    border-left: 1px solid #b3bcbd;
+    .icon {
+      margin: 15px;
+      opacity: .6;
+      &:hover {
+        opacity: 1
+      }
+      
+    }
+  }
+  }
+ 
 }

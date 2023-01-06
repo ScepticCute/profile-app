@@ -5,10 +5,14 @@
   flex-direction: column;
   min-height: 500px;
   background-color: transparent;
-  margin: 0 auto;
   max-width: 1080px;
+  margin: 0 auto;
 
   .middle__block_wrapper {
+    &:first-child {
+      margin-top: 50px;
+    }
+
     display: flex;
     justify-content: space-between;
     row-gap: 10px;
@@ -22,7 +26,6 @@
       max-height: 300px;
       margin: 10px;
       color: white;
-      backdrop-filter: blur(1px);
       overflow: hidden;
 
       img {
