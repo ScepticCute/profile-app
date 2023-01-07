@@ -19,7 +19,7 @@ export const SitesSection = () => {
           </span>
           <div className={styles.sites__icon}>
             <SocialIcon
-              url='https://github.com/ScepticCute'
+              url='https://github.com/ScepticCute/sushi-shop'
               rel="noreferrer"
               target="_blank" bgColor='white' />
           </div>
@@ -32,7 +32,7 @@ export const SitesSection = () => {
           </span>
           <div className={styles.sites__icon}>
             <SocialIcon
-              url='https://github.com/ScepticCute'
+              url='https://github.com/ScepticCute/todo-ts-redux'
               rel="noreferrer"
               target="_blank" bgColor='white' />
           </div>
@@ -47,7 +47,7 @@ export const SitesSection = () => {
           </span>
           <div className={styles.sites__icon}>
             <SocialIcon
-              url='https://github.com/ScepticCute'
+              url='https://github.com/ScepticCute/todo-ts'
               rel="noreferrer"
               target="_blank" bgColor='white' />
           </div>

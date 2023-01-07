@@ -14,9 +14,13 @@
   }
   .icons {
     border-left: 1px solid #b3bcbd;
+    
     .icon {
       margin: 15px;
       opacity: .6;
+      &:first-child {
+        margin-left: 30px
+      }
       &:hover {
         opacity: 1
       }

@@ -9,7 +9,7 @@ export const Home = ({ arrowIsActive }) => {
   return (
     <>
       <WelcomeSection arrowIsActive={arrowIsActive} />
-      <MiddleSection />
+      {/* <MiddleSection /> */} 
       <SitesSection />
       <SkillsSection />
     </>

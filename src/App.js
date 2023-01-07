@@ -9,6 +9,9 @@ import { Home } from './pages/Home/Home';
 function App() {
   const [headerIsActive, setHeaderActive] = useState(false);
   const [burgerIsOpen, setBurgerOpen] = useState(false);
+  setTimeout(() => {
+    setHeaderActive(true);
+  }, 3500);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {

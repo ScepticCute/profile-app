@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './SkillsSection.module.scss'
+
 import {SiJavascript, SiTypescript, SiCss3, SiHtml5, SiExpress, SiNodedotjs, SiReact, SiSass, SiRedux, SiJest, SiGit, SiStyledcomponents, SiNextdotjs, SiNpm, SiMongodb, SiPostgresql, SiWebpack} from  "react-icons/si";
+import { MdTouchApp } from 'react-icons/md'
 
 const skillSvgs = [
   {title: 'HTML5', description: 'Язык разметки.', svg: SiHtml5, progress: 90},
@@ -14,7 +16,7 @@ const skillSvgs = [
   {title: 'Redux/ReduxTK', description: 'Инструмент для управления глобальным состоянием.', svg: SiRedux, progress: 50},
   {title: 'Jest', description: 'Инструмент тестирования веб-приложений.', svg: SiJest, progress: 10},
   {title: 'Git', description: 'Система контроля версий.', svg: SiGit, progress: 15},
-  {title: 'StyledComponents', description: 'Инструмент для удобной и быстрой работы с CSS с большим акцентом на взаимодействие с значениями CSS.', svg: SiStyledcomponents, progress: 40},
+  { title: 'StyledComponents', description: 'Инструмент для удобной и быстрой работы с CSS с большим акцентом на взаимодействие со значениями CSS.', svg: SiStyledcomponents, progress: 40 },
   {title: 'Next', description: 'React фреймворк.', svg: SiNextdotjs, progress: 15},
   {title: 'NPM', description: 'Менеджер пакетов.', svg: SiNpm, progress: 90},
   {title: 'MongoDB', description: 'Нереляционная документоориентированная база данных.', svg: SiMongodb, progress: 20},
@@ -37,7 +39,8 @@ export const SkillsSection = () => {
           <div className={styles.content}>
             <div className={styles.left_side}>
               <h1> Заголовок заголовок! </h1>
-              <p> Опыт опыт опыт... Опыт опыт опыт... Опыт опыт опыт...  </p>
+          <p className={styles.description}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aperiam veritatis dicta magni consequuntur necessitatibus exercitationem dolore recusandae ducimus, praesentium beatae laborum fugiat tenetur non corrupti nesciunt amet obcaecati impedit?
+            Quidem voluptates doloremque eveniet molestias velit perspiciatis dolorem, vero amet obcaecati facere, ab cupiditate nam, nobis accusamus eligendi quam? Quidem nam soluta autem amet quod eos cupiditate modi quae odit.  </p>
             </div>
             <div className={styles.right_side}>
               <h1> Интерактивная скилл-панель </h1>
@@ -50,13 +53,16 @@ export const SkillsSection = () => {
                     onClick={() => {onClickHadler(i)}}
                     > <el.svg /> </div>
                 ))}
-              </div>
-              {currentSkill.title ?   <h1 className={styles.current_title}> {currentSkill.title} </h1> : <h1 className={styles.current_title}> Прогресс навыка. </h1>} 
+            </div>
               <div className={styles.progress_wrapper}>  
+
+              <h2 className={styles.progress_bar_text}>{currentSkill.title}</h2>
+
                 <div 
                   className={styles.progress_bar}
                   style={{width: progressBarStyle}}
-                  > </div> 
+              /> 
+
               </div>
                 
               

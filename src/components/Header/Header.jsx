@@ -4,10 +4,9 @@ import { HashLink as Link } from 'react-router-hash-link'
 import { HiBars3 } from 'react-icons/hi2'
 
 const linksArray = [
-  { link: '/#welcomeAnchor', title: 'Главная страница' },
-  { link: '/#middleAnchor', title: 'Обо мне' },
+  { link: '/#welcomeAnchor', title: 'Начало' },
   { link: '/#sitesAnchor', title: 'Примеры работ' },
-  { link: '/#bottomAnchor', title: 'Мои преимущества' },
+  { link: '/#bottomAnchor', title: 'Мои навыки' },
 ]
 
 // Добей бургер по старому проекту с суши.
@@ -17,8 +16,13 @@ export const Header = ({ setBurgerOpen, burgerIsOpen }) => {
     <header className={styles.header}>
       <nav>
         <ul>
-          {linksArray.map(el => (
-            <Link to={el.link} smooth={true}><li>{el.title}</li></Link>
+          {linksArray.map((el, i) => (
+            <Link
+              to={el.link}
+              smooth={true}
+              key={i}>
+              <li>{el.title}</li>
+            </Link>
           ))}
         </ul >
 

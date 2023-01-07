@@ -7,8 +7,14 @@
   min-width: 350px;
   .welcome__block {
     display: inherit;
-    position: relative;
-    bottom: 200px;
+    bottom: 150px; 
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
     justify-content: center;
     align-items: center;
     font-size: 30px;
@@ -42,10 +48,10 @@
   a {
     text-decoration: none;
   }
-  position: absolute;
+  position: fixed;
   font-size: 50px;
   padding: 10px;
-  top: calc(90vh - 50px);
+  bottom: 75px;
   background-color: rgb(0, 0, 0, 0.2);
   width: 50px;
   height: 50px;
@@ -96,16 +102,6 @@
     opacity: 1;
   }
 }
-
-@media (max-width: 1150px) {
-  .welcome__wrapper {
-    .welcome__block {
-      bottom: 300px;
-    }
-  }
-}
-
-
 
 @media (max-height: 700px) {
   .welcome__block span {
