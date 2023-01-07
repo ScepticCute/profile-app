@@ -1,9 +1,9 @@
-.sites__wrapper {
+.wrapper {
   min-height: 200px;
   background-color: var(--black);
   padding: 40px;
 
-  .sites__flex_wrapper {
+  .flex_wrapper {
     margin: 80px 0 80px;
 
     display: flex;
@@ -13,17 +13,17 @@
       flex-direction: row-reverse;
     }
 
-    .sites__description {
+    .description {
       min-height: 200px;
       color: white;
       max-width: 500px;
       font-size: 16px;
       font-weight: 100;
     }
-    .sites__icon {
+    .icon {
       margin: 20px 0;
     }
-    .sites__image {
+    .image {
       display: flex;
       align-items: center;
       max-width: 500px;
@@ -32,8 +32,6 @@
       border-radius: 1rem;
       transition: 1s ease;
       cursor: pointer;
-      &:hover {
-      }
       img {
         width: 100%;
         object-fit: cover;
@@ -46,7 +44,7 @@
       }
     }
 
-    // ТЕМЫ ДЛЯ ТЕНЕЙ КАРТИНОК
+    // ТЕМЫ ДЛЯ ТЕНЕЙ БЛОКОВ КАРТИНОК
 
     .orange_theme {
       box-shadow: rgba(255, 193, 60, 0.1) 0px 18px 50px -10px;
@@ -65,20 +63,19 @@
 }
 
 @media (max-width: 1150px) {
-  .sites__wrapper {
+  .wrapper {
     padding: 40px 20px;
   }
-  .sites__flex_wrapper {
+  .flex_wrapper {
     flex-direction: column-reverse  !important;
-    .sites__description {
+    .description {
       margin-top: 30px;
     }
-    .sites__icon {
+    .icon {
       border-bottom: 1px solid rgba(192,192,204, .1);
       padding-bottom: 20px;
       display: flex;
       justify-content: center;
-      
     }
   }
   

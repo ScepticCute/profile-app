@@ -1,12 +1,11 @@
 import React from 'react'
 import styles from './Header.module.scss'
 import { HashLink as Link } from 'react-router-hash-link'
-import { HiBars3 } from 'react-icons/hi2'
 
 const linksArray = [
   { link: '/#welcomeAnchor', title: 'Начало' },
-  { link: '/#sitesAnchor', title: 'Примеры работ' },
-  { link: '/#bottomAnchor', title: 'Мои навыки' },
+  { link: '/#sitesAnchor', title: 'Работы' },
+  { link: '/#bottomAnchor', title: 'Навыки' },
 ]
 
 // Добей бургер по старому проекту с суши.
@@ -25,12 +24,7 @@ export const Header = ({ setBurgerOpen, burgerIsOpen }) => {
             </Link>
           ))}
         </ul >
-
-
       </nav >
-      <div className={styles.burger} onClick={() => { setBurgerOpen(!burgerIsOpen) }}>
-        <HiBars3 />
-      </div>
     </header>
   )
 }
