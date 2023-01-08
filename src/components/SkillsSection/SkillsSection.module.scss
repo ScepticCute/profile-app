@@ -73,9 +73,11 @@
         justify-content: center;
         transition: 4s cubic-bezier(0.04, 1.13, 0.42, 0.32);
         outline: 0;
+        &:focus {
+          outline: 1px solid rgba(170, 50, 220, 0.6);
+        }
         &:focus,
         &:hover {
-          outline: 1px solid rgba(170, 50, 220, 0.6);
           border-radius: 4px;
           opacity: 1;
           transform: scale(1.3);
