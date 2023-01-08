@@ -1,5 +1,5 @@
 .footer {
-  height: 150px;
+  min-height: 150px;
   background-color: var(--black);
   color: #b3bcbd;
   display: flex;
@@ -14,10 +14,10 @@
   }
   .icons {
     border-left: 1px solid #b3bcbd;
-    
     .icon {
       margin: 15px;
       opacity: .6;
+      transition: .3s ease;
       &:first-child {
         margin-left: 30px
       }
@@ -30,3 +30,24 @@
   }
  
 }
+
+@media (max-width: 350px) {
+  .footer {
+    height: 200px;
+    .wrap {
+      flex-direction: column;
+      margin-top: none;
+      .contact_text {
+        border-right: none;
+        border-bottom: 1px solid #b3bcbd;
+      }
+      .icons {
+        border: none;
+  
+        .icon:first-child {
+          margin: 15px;
+        }
+      }
+    }
+  }
+  } 
