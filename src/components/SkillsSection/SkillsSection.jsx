@@ -13,7 +13,7 @@ export const SkillsSection = () => {
   const [progressBarStyle, setProgressBarStyle] = React.useState('100%')
 
   const onClickHadler = (index) => {
-    setProgressBarStyle(`${skillsArray[index].progress}%`)
+    setProgressBarStyle(`${skillSvgs[index].progress}%`)
     setCurrentSkill(skillsArray[index])
   }
 
@@ -25,7 +25,7 @@ export const SkillsSection = () => {
           <p className={styles.description}>
             В таблице справа можно узнать то, насколько я считаю свои знания углубленными в определенной технологии. <br />
             В вопросе способа получения информации я предпочитаю книги, документации, статьи и практику. <br />
-            Данные всегда актуальны.
+            Данные обновляются еженедельно.
           </p>
             </div>
             <div className={styles.right_side}>
