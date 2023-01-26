@@ -43,12 +43,10 @@ export const SkillsSection = () => {
           <div className={styles.content}>
             <div className={styles.left_side}>
               <h1> Мои навыки </h1>
-              <p className={styles.description}>
-                В таблице справа можно узнать то, насколько я считаю свои знания углубленными в определенной технологии. <br />
-                В вопросе способа получения информации я предпочитаю книги, документации, статьи и практику. <br />
-                Данные обновляются примерно раз в месяц. <br />
-                {/*Мои теоретические знания можно увидеть на второй странице просто нажав на кнопку ниже.  <br />*/}
-              </p>
+          <p className={styles.description}>В таблице справа можно узнать то, насколько я считаю свои знания углубленными в определенной технологии.</p>
+          <p className={styles.description}>В вопросе способа получения информации я предпочитаю книги, документации, статьи и практику.</p>
+          <p className={styles.description}>Данные обновляются примерно раз в месяц. </p>
+          {/*Мои теоретические знания можно увидеть на второй странице просто нажав на кнопку ниже.  <br />*/}
             </div>
             <div className={styles.right_side}>
               <h1> Интерактивная скилл-панель </h1>
@@ -72,11 +70,7 @@ export const SkillsSection = () => {
             </div>
             {currentSkill ? <div className={styles.progress_description}> {currentSkill.description}  </div> : ''}
           </div>
-          </div>
-          <div className={styles.second_page}>
-          </div>
-
-
+      </div>
       </section>
   )
 }
