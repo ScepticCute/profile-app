@@ -8,8 +8,6 @@ const linksArray = [
   { link: '/#bottomAnchor', title: 'Навыки' },
 ]
 
-// Добей бургер по старому проекту с суши.
-
 export const Header = ({ setBurgerOpen, burgerIsOpen }) => {
   return (
     <header className={styles.header}>

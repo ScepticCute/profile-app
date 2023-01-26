@@ -9,6 +9,7 @@ import { Home } from './pages/Home/Home';
 function App() {
   const [headerIsActive, setHeaderActive] = useState(false);
   const [burgerIsOpen, setBurgerOpen] = useState(false);
+
   setTimeout(() => {
     setHeaderActive(true);
   }, 3500);
@@ -27,7 +28,7 @@ function App() {
     <div className={styles.wrapper}>
       {headerIsActive ? <Header setBurgerOpen={setBurgerOpen} burgerIsOpen={burgerIsOpen} /> : ''}
       <Routes>
-        <Route path="/" element={<Home arrowIsActive={headerIsActive} />} />
+        <Route path="/" element={<Home />} />
       </Routes>
 
       <Footer />

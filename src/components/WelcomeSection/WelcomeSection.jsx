@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import styles from './WelcomeSection.module.scss'
 
-export const WelcomeSection = ({ arrowIsActive }) => {
+export const WelcomeSection = () => {
   const typewritter = useRef(null)
   const [textForTypewritter] = useState('Я - FrontEnd разработчик.')
 

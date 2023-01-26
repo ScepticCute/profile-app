@@ -4,10 +4,10 @@ import {SkillsSection} from '../../components/SkillsSection/SkillsSection'
 
 
 
-export const Home = ({ arrowIsActive }) => {
+export const Home = () => {
   return (
     <>
-      <WelcomeSection arrowIsActive={arrowIsActive} />
+      <WelcomeSection />
       <SitesSection />
       <SkillsSection />
     </>
